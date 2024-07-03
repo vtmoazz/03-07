@@ -5,8 +5,8 @@
 int count_vowels(char *s) {
     int count = 0;
     for (int i = 0; s[i] != '\0'; i++) {
-        char c = tolower(s[i]); 
-        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U' ) {
+        char c = tolower(s[i]); // dùng hàm này thì gặp chữ hoa nó trả về chữ thường
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ) {
             count++;
         }
     }
